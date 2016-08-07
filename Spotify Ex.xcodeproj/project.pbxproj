@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E464C5081D57A0A000C0CE6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E464C5071D57A0A000C0CE6A /* main.m */; };
 		E464C50B1D57A0A000C0CE6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E464C50A1D57A0A000C0CE6A /* AppDelegate.m */; };
-		E464C50E1D57A0A000C0CE6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E464C50D1D57A0A000C0CE6A /* ViewController.m */; };
+		E464C50E1D57A0A000C0CE6A /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = E464C50D1D57A0A000C0CE6A /* Start.m */; };
 		E464C5111D57A0A000C0CE6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E464C50F1D57A0A000C0CE6A /* Main.storyboard */; };
 		E464C5141D57A0A000C0CE6A /* Spotify_Ex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E464C5121D57A0A000C0CE6A /* Spotify_Ex.xcdatamodeld */; };
 		E464C5161D57A0A000C0CE6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E464C5151D57A0A000C0CE6A /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		E464C5071D57A0A000C0CE6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E464C5091D57A0A000C0CE6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E464C50A1D57A0A000C0CE6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E464C50C1D57A0A000C0CE6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E464C50D1D57A0A000C0CE6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E464C50C1D57A0A000C0CE6A /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
+		E464C50D1D57A0A000C0CE6A /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		E464C5101D57A0A000C0CE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E464C5131D57A0A000C0CE6A /* Spotify_Ex.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spotify_Ex.xcdatamodel; sourceTree = "<group>"; };
 		E464C5151D57A0A000C0CE6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,8 @@
 		E464C5051D57A0A000C0CE6A /* Spotify Ex */ = {
 			isa = PBXGroup;
 			children = (
-				E464C5091D57A0A000C0CE6A /* AppDelegate.h */,
-				E464C50A1D57A0A000C0CE6A /* AppDelegate.m */,
-				E464C50C1D57A0A000C0CE6A /* ViewController.h */,
-				E464C50D1D57A0A000C0CE6A /* ViewController.m */,
+				E464C5211D57B2F200C0CE6A /* Controllers */,
+				E464C5201D57B2EA00C0CE6A /* Main */,
 				E464C50F1D57A0A000C0CE6A /* Main.storyboard */,
 				E464C5151D57A0A000C0CE6A /* Assets.xcassets */,
 				E464C5171D57A0A000C0CE6A /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				E464C5071D57A0A000C0CE6A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E464C5201D57B2EA00C0CE6A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E464C5091D57A0A000C0CE6A /* AppDelegate.h */,
+				E464C50A1D57A0A000C0CE6A /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		E464C5211D57B2F200C0CE6A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E464C50C1D57A0A000C0CE6A /* Start.h */,
+				E464C50D1D57A0A000C0CE6A /* Start.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E464C50E1D57A0A000C0CE6A /* ViewController.m in Sources */,
+				E464C50E1D57A0A000C0CE6A /* Start.m in Sources */,
 				E464C5141D57A0A000C0CE6A /* Spotify_Ex.xcdatamodeld in Sources */,
 				E464C50B1D57A0A000C0CE6A /* AppDelegate.m in Sources */,
 				E464C5081D57A0A000C0CE6A /* main.m in Sources */,
