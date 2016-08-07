@@ -14,6 +14,9 @@
 		E464C5141D57A0A000C0CE6A /* Spotify_Ex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E464C5121D57A0A000C0CE6A /* Spotify_Ex.xcdatamodeld */; };
 		E464C5161D57A0A000C0CE6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E464C5151D57A0A000C0CE6A /* Assets.xcassets */; };
 		E464C5191D57A0A000C0CE6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E464C5171D57A0A000C0CE6A /* LaunchScreen.storyboard */; };
+		E464C5241D57B56E00C0CE6A /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E464C5231D57B56E00C0CE6A /* Spotify.framework */; };
+		E464C5261D57B8FE00C0CE6A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E464C5251D57B8FE00C0CE6A /* AVFoundation.framework */; };
+		E464C5281D57B90F00C0CE6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E464C5271D57B90F00C0CE6A /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		E464C5151D57A0A000C0CE6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E464C5181D57A0A000C0CE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E464C51A1D57A0A000C0CE6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E464C5231D57B56E00C0CE6A /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+		E464C5251D57B8FE00C0CE6A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E464C5271D57B90F00C0CE6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E464C5281D57B90F00C0CE6A /* SystemConfiguration.framework in Frameworks */,
+				E464C5261D57B8FE00C0CE6A /* AVFoundation.framework in Frameworks */,
+				E464C5241D57B56E00C0CE6A /* Spotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,8 @@
 		E464C4FA1D57A09F00C0CE6A = {
 			isa = PBXGroup;
 			children = (
+				E464C5271D57B90F00C0CE6A /* SystemConfiguration.framework */,
+				E464C5251D57B8FE00C0CE6A /* AVFoundation.framework */,
 				E464C5051D57A0A000C0CE6A /* Spotify Ex */,
 				E464C5041D57A09F00C0CE6A /* Products */,
 			);
@@ -60,6 +71,7 @@
 		E464C5051D57A0A000C0CE6A /* Spotify Ex */ = {
 			isa = PBXGroup;
 			children = (
+				E464C5221D57B53400C0CE6A /* Frameworks */,
 				E464C5211D57B2F200C0CE6A /* Controllers */,
 				E464C5201D57B2EA00C0CE6A /* Main */,
 				E464C50F1D57A0A000C0CE6A /* Main.storyboard */,
@@ -96,6 +108,14 @@
 				E464C50D1D57A0A000C0CE6A /* Start.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E464C5221D57B53400C0CE6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E464C5231D57B56E00C0CE6A /* Spotify.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,8 +305,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Spotify",
+					Ex,
+				);
 				INFOPLIST_FILE = "Spotify Ex/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jjpe.Spotify-Ex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -297,8 +323,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Spotify",
+					Ex,
+				);
 				INFOPLIST_FILE = "Spotify Ex/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jjpe.Spotify-Ex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
