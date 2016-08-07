@@ -113,7 +113,7 @@
 				TargetAttributes = {
 					E464C5021D57A09F00C0CE6A = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = P76D2Z98CK;
+						DevelopmentTeam = QXF33N93KH;
 					};
 				};
 			};
@@ -268,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Spotify Ex/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jjpe.Spotify-Ex";
@@ -279,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Spotify Ex/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jjpe.Spotify-Ex";
